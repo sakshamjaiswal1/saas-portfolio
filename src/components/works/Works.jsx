@@ -27,7 +27,7 @@ function Works() {
     },
   ];
   const handleClick=(way)=>{
-way=="left"?setCurrSlider(currSlider>0?currSlider-1:2):setCurrSlider(currSlider<data.length-1?currSlider+1:0)
+way==="left"?setCurrSlider(currSlider>0?currSlider-1:2):setCurrSlider(currSlider<data.length-1?currSlider+1:0)
   }
 
   return (
