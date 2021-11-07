@@ -31,6 +31,7 @@ way==="left"?setCurrSlider(currSlider>0?currSlider-1:2):setCurrSlider(currSlider
   }
 
   return (
+    <>
     <div className="works" id="works">
       <div className="slider" style={{transform:`translateX(-${currSlider*100}vw)`}}>
       { data.map( (item)=> <div className="container">
@@ -59,6 +60,7 @@ way==="left"?setCurrSlider(currSlider>0?currSlider-1:2):setCurrSlider(currSlider
       <img src="assets/arrow.png" className="arrow left" alt="" onClick={()=>handleClick('left')} />
       <img src="assets/arrow.png" className="arrow right" alt="" onClick={()=>handleClick()} />
     </div>
+    </>
   );
 }
 
